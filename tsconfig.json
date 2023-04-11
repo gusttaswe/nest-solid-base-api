@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "useUnknownInCatchVariables": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "sourceMap": true,
+    "allowJs": false,
+    "outDir": "dist",
+    "lib": ["es7"],
+    "baseUrl": ".",
+    "paths": {
+      "shared/*": ["src/shared/*"],
+      "modules/*": ["src/modules/*"],
+      "providers/*": ["src/providers/*"],
+      "domains/*": ["src/domains/*"]
+    },
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "test"]
+}
