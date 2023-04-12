@@ -1,6 +1,6 @@
 {
   "name": "nest-solid-base-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a basic boilerplate code for building a Nest.js API that adheres to the SOLID design principles and follows a package-by-feature structure. Use it as a starting point to build robust, maintainable, and scalable APIs with Nest.js.",
   "author": "Gustavo Mata <dev.gustta.h@gmail.com",
   "private": true,
