@@ -27,7 +27,9 @@ describe('SampleUseCase', () => {
     sampleUseCase = moduleRef.get<SampleUseCase>(SampleUseCase);
   });
 
-  it('should return "Hello World!"', () => {
-    expect(sampleUseCase.execute()).resolves.toEqual(new Ok('Hello World!'));
+  it('should return "Hello World!"', async () => {
+    const result = await sampleUseCase.execute();
+    expect(result.isOk()).toBe(true);
+    expect(result._unsafeUnwrap()).toEqual('Hello World!');
   });
 });
